@@ -5,7 +5,14 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 };
 
 updateScoreElement();
+const autoBtn = document.getElementById('autoBtn');
+autoBtn.addEventListener('click', () => {
+    if (autoBtn.innerHTML === 'Auto Play') {
+        autoBtn.innerHTML = 'Stop';
+    } else {autoBtn.innerHTML= 'Auto Play'
 
+    }
+})
 /*
 if (!score) {
   score = {
