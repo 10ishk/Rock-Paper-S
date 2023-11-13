@@ -1,6 +1,5 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/10ishk/Rock-Paper-S?color=rgb(86,61,124))
 ![GitHub repo size](https://img.shields.io/github/repo-size/10ishk/Rock-Paper-S?color=darkgreen)
-# Rock-Paper-S
 # Rock Paper Scissors Game
 
 A futuristic and stylish implementation of the classic Rock Paper Scissors game. The game features a modern design with attractive animations and enhanced visual elements.
