@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock.css">
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: "Loki";
+            src: url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.eot");
+            src: url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.eot?#iefix")format("embedded-opentype"),
+                url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.woff2")format("woff2"),
+                url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.woff")format("woff"),
+                url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.ttf")format("truetype"),
+                url("https://db.onlinewebfonts.com/t/fafa5878ee67eff81101cfa6939cf581.svg#Loki")format("svg");
+        }
+    </style>
+
+    <p class="title">Rock Paper Scissors</p>
+    <div class="boxx">
+        <button class="move-button js-rock-button" id="">
+            <img src="images/rock.png" class="move-icon">
+        </button>
+
+        <button class="move-button js-paper-button" id="">
+            <img src="images/paper.png" class="move-icon">
+        </button>
+
+        <button class="move-button js-Scissors-button" id="">
+            <img src="images/Scissors.png" class="move-icon">
+        </button>
+    </div>
+    <div class="bx">
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score score"></p>
+    </div>
+    <div class="bux">
+        <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        " class="reset-score-button js-reset-score-button" id="buton">Reset Score</button>
+
+        <button class="auto-play-button" id="buton" onclick="
+        autoPlay();
+        ">Auto Play</button>
+    </div>
+    <script src="rockpaper.js"></script>
+</body>
+
+</html>
